@@ -1,0 +1,288 @@
+/*general styling*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* header */
+body{
+  height: 200vh;
+  text-align: center;
+  background-color: black;
+}
+.header{
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width:768px) {
+  .header{
+      display: flex;
+      justify-content: space-evenly;
+  }
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  gap: 0.25rem;
+}
+
+.logo-icon{
+  height: 1.75rem;
+}
+
+.logo-text{
+  font-family:  "Sofia";
+}
+
+nav{
+  transition: 1s ;
+  display: inline;
+  margin: 120px 0px;
+}
+
+@media screen and (min-width:768px) {
+  nav{
+      display: flex;
+  }
+}
+
+nav a{
+  display: flex;
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 650;
+  color: grey;
+  text-decoration: none;
+  padding: 6px 20px;
+  transition: 1.5s;
+  gap: 0.2rem;
+}
+nav a:hover {
+  color: #8ef;
+  border-bottom: 2px solid #bef;
+  border-radius: 15px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.Contacts{
+  display:none;
+}
+@media screen and (min-width:768px) {
+  .Contacts{
+      display: flex;
+  }
+}
+
+.Contacts a{
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: 1.5s;
+  gap: 0.2rem;
+}
+
+.Contacts a:hover{
+  color: darkslateblue;
+  border-bottom: 2px solid #bef;
+  border-radius: 15px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.header .button{
+  display: none;
+}
+@media screen and (max-width:768px) {
+  .nav{
+    margin: 120px 0px 0px 10px;
+  }
+  .header .button{
+      height: 1.5rem;
+      display: flex;
+      justify-content: flex-end;
+  }
+}
+
+@keyframes slideFromLeft {
+
+  0% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+
+  100%{
+      opacity: 1;
+      transform: translateX(0);
+  }
+  
+}
+/* Hero-section */
+.Hero{
+  height: 1600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Menu{
+  height: 300px;
+  color: beige;
+  gap: 15rem;
+}
+.Name{
+  font-family:  "Sofia";
+  text-align:left;
+  font-size: 1.5rem;
+}
+.Name:hover{
+  text-align: center;
+  width: 9rem;
+  color: #3f4251;
+  border-bottom: 2px solid #bef;
+  border-radius: 15px;
+  transition: all 0.6s linear 0s;
+  z-index: 1;
+}
+.Menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.Menu ul img{
+  height: 300px;
+  width: 340px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.6s linear 0s;
+}
+.Menu ul img:hover{
+  transform: scale(1.1);
+}
+.Menu ul .menu-icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  gap: 0.5rem;
+  text-decoration:underline;
+}
+.menu-icons a{
+  text-align: center;
+  color: wheat;
+  width: 50px;
+  font-size: 15px;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 15px;
+  border-bottom:2px solid #bef;
+}
+
+@media screen and (max-width:768px) {
+  .Hero{
+    height: max-content;
+}
+.Menu{
+  height: 1680px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.Menu ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+}
+
+
+/* Footer */
+footer{
+  height: 100px;
+  margin-top: 10rem;
+}
+.foot-panel1{
+  background-color: #222f3d;
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2%;
+}
+
+ul a{
+  display: block;
+  font-size: 0.85rem;
+  color: #dddddd;
+  margin-top: 10px;
+}
+
+.foot-panel2{
+  background-color: #222f3d;
+  color: white;
+  border-top: 0.5px solid white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+   background-size: cover;
+   height: 50px;
+   width: 100px;
+}
+
+.foot-panel3{
+  background-color: #0f1111;
+  color: white;
+  height: 80px;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.foot-panel3 a{
+  color: wheat;
+}
+
+.pages{
+  padding-top: 25px;
+}
+.foot-panel4 a{
+  color: white;
+}
+.copyright{
+  padding-top:5px;
+}
+@media screen and (max-width:768px) {
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .foot-panel1{
+    height:130px ;
+  }
+}
+/* the End */
+
+
+
+    
